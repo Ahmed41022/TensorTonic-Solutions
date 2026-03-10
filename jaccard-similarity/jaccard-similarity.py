@@ -6,7 +6,7 @@ def jaccard_similarity(set_a, set_b):
     set_b = set(set_b)
     intersection = set_a & set_b
     union = set_a | set_b
-    if (len(intersection) | len(union) == 0) :
+    if len(union) == 0:
         return 0.0
     J = len(intersection)/len(union)
     return J
